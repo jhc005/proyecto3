@@ -8,9 +8,8 @@ type Props={
 
 export default function Titulo({texto,fontSize=28}:Props) {
   return (
-    <View>
       <Text style={[styles.texto,{fontSize}]}>{texto}</Text>
-    </View>
+    
   )
 }
 

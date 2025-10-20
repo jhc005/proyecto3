@@ -1,7 +1,6 @@
 import { ScrollView, StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import { SafeAreaView } from 'react-native'
 import Titulo from './components/Titulo'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 export default function App() {
   return (
@@ -24,11 +23,11 @@ export default function App() {
 const styles = StyleSheet.create({
   contenedorPrincipal:{
     flex:1,
-    color:"#dbeafe"
+    backgroundColor:"#dbeafe"
   },
   tituloPrincipal:{
     textAlign:"center",
-    marginTop:28
+    marginTop:24
   },
   tituloSecundario:{
     marginTop:28
