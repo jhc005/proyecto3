@@ -18,16 +18,16 @@ export const FilaEstrellas = ({ estrellas }: FilaEstrellasProp) => {
         <View style={styles.contenedor}>
             {listaLlenas.map((id) => (
                 <MaterialIcons
-                key={'llena-${id}'}
+                key={`llena-${id}`}
                 name = "star"
                 style={styles.estrellaLlena}
                 />
             )
         )}
 
-            {listaLlenas.map((id) => (
+            {listaVacias.map((id) => (
                 <MaterialIcons
-                key={'vacia-${id}'}
+                key={`vacia-${id}`}
                 name = "star"
                 style={styles.estrellaVacia}
                 />
